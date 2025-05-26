@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- Static Pages -->
+<url>
+<loc>https://sportbn.com/</loc>
+<lastmod>2025-04-10</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority>
+</url>
+
+<url>
+<loc>https://sportbn.com/privacy-policy</loc>
+<lastmod>2025-04-10</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<loc>https://sportbn.com/terms</loc>
+<lastmod>2025-04-10</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<!-- Dynamic Match Pages (Example Structure) -->
+<url>
+<loc>https://sportbn.com/watch-now/matches/:league/:team1/:team2/:id</loc>
+<lastmod>2025-04-10</lastmod>
+<changefreq>always</changefreq>
+<priority>3</priority>
+</url>
+
+<url>
+<loc>https://sportbn.com/watch-now/matches/:league/:team1/:team2/:id</loc>
+<lastmod>2025-04-10</lastmod>
+<changefreq>hourly</changefreq>
+<priority>3</priority>
+</url>
+
+<!-- Search Pages -->
+<url>
+<loc>https://sportbn.com/search+about/:search</loc>
+<lastmod>2025-04-10</lastmod>
+<changefreq>weekly</changefreq>
+<priority>2</priority>
+</url>
+
+<!-- Index File for Large Sites -->
+<sitemap>
+<loc>https://sportbn.com/sitemap.yml</loc>
+<lastmod>2025-04-10</lastmod>
+</sitemap>
+
+</urlset>

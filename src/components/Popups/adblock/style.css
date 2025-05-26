@@ -1,0 +1,75 @@
+/* ShowPopup.css */
+.adblock-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.63);
+    display: grid;
+    place-items: center;
+    z-index: 999999;
+    padding: 20px;
+}
+
+.adblock-content {
+    background: #1e223a;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.adblock-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.adblock-message,
+.adblock-request {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.adblock-benefits {
+    margin-bottom: 20px;
+}
+
+.adblock-list {
+    padding-left: 20px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.adblock-list li {
+    margin-bottom: 8px;
+}
+
+.adblock-request {
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .adblock-overlay {
+        padding-inline: 0 !important;
+    }
+
+    .adblock-content {
+        padding: 25px;
+    }
+
+    .adblock-benefits {
+        padding-inline: 10px;
+    }
+
+    .adblock-actions {
+        display: flex;
+        gap: 15px;
+        margin-top: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+}

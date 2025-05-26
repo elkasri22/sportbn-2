@@ -1,0 +1,42 @@
+.video-js .vjs-big-play-button {
+    line-height: 2.5em;
+    height: 2.8em;
+    width: 2.8em;
+    border: 0.1em solid #1ad584;
+    background-color: #1c242c;
+    background-color: rgba(49, 84, 120, 0.7);
+    border-radius: 50%;
+}
+.overly-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000a8;
+    top: 0;
+    z-index: 1;
+}
+
+.child-overly{
+    border: 0.1px solid #032816;
+    border-radius: 2.5px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.child-overly .teams{
+    width: 100%;
+    gap: 1rem !important;
+}
+.video-js .vjs-tech {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.5px;
+}

@@ -1,0 +1,16 @@
+.LeaguesSidebar{
+    width: 330px !important;
+    padding-left: 0 !important;
+    padding-right: 52px !important;
+}
+.LeaguesSidebar .LeagueItem{
+    padding: 10px 0;
+    border-radius: 4px;
+}
+.LeaguesSidebar .LeagueItem:hover {
+    --tw-text-opacity: 1;
+    background: #03bb62;
+}
+.LeaguesSidebar .LeagueItem span{
+    margin-left: 12px;
+}

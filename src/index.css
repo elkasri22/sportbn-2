@@ -1,0 +1,323 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222deg 82% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 217 100% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 84% 5%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 48 100% 50%;
+    --primary-foreground: 222 84% 5%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 48 100% 50%;
+    --accent-foreground: 222 84% 5%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217deg 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 212 100% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+
+  body {
+    @apply bg-sport-dark text-foreground !important;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted;
+  }
+}
+
+@layer components {
+  .live-indicator {
+    @apply inline-flex items-center gap-1.5;
+  }
+
+  .live-indicator::before {
+    content: "";
+    @apply w-2.5 h-2.5 rounded-full bg-sport-green animate-pulse-soft;
+  }
+}
+
+.glassmorphism {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.match-card {
+  background-color: #2c3047;
+  border-radius: 7px;
+}
+
+.match-card .content-match{
+  padding: 10px 5px !important;
+}
+
+.match-card:hover {
+  background: #19212e
+}
+.team-logo {
+  @apply w-8 h-8 object-contain;
+}
+
+/* Page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Lazy loading effect for images */
+.lazy-image {
+  @apply transition-all duration-500 blur-sm;
+}
+
+.lazy-image-loaded {
+  @apply blur-none;
+}
+
+
+/* لأجهزة الهاتف الصغيرة (أقل من 576 بكسل) */
+.container {
+  width: 100%;
+  /* يشغل العرض الكامل للشاشة */
+}
+
+/* لأجهزة الهاتف الأكبر (576 بكسل وما فوق) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    /* يحدد أقصى عرض للحاوية */
+  }
+}
+
+/* لأجهزة التابلت (768 بكسل وما فوق) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* لأجهزة الحاسوب الصغيرة (992 بكسل وما فوق) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* لأجهزة الحاسوب الكبيرة (1200 بكسل وما فوق) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* لأجهزة الحاسوب الكبيرة جداً (1400 بكسل وما فوق) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1270px;
+  }
+}
+
+nav{
+  height: 90px;
+}
+
+.active_f::after {
+  position: absolute;
+  display: block;
+  content: "";
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 215 0 / var(--tw-bg-opacity));
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+
+.hidden_f {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.offcanvas,
+.offcanvas-backdrop {
+  margin: 0 !important;
+  width: 93vw !important;
+}
+
+.offcanvas-backdrop {
+  background: #1e223a;
+}
+
+.offcanvas-backdrop.show {
+  opacity: .8 !important;
+}
+
+footer {
+  margin-top: 35px;
+  padding: 20px 0;
+  background: #1e223a;
+}
+
+a{
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.offcanvas-body {
+  background: #171a2b !important;
+}
+
+@media (min-width: 992px){
+  .info-match .team1 .content-t1 span, .info-match .team2 .content-t2 span, .menu-button{
+      display: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  main{
+    padding: 0 15px !important;
+  }
+  .parent {
+    padding: 0 !important;
+  }
+
+  .row_f {
+    flex-direction: column !important;
+  }
+
+  .matches-header {
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 10px;
+  }
+
+  .matches-filters {
+    margin: 0;
+  }
+
+  .parent {
+    padding: 0 !important;
+  }
+
+  .LeaguesSidebar {
+    padding: 0 !important;
+  }
+
+  .search_form {
+    display: none;
+  }
+
+  .menu-button {
+    display: block !important;
+  }
+
+  .title_live_matches {
+    margin-top: 12px;
+  }
+
+  .offcanvas-body {
+    position: absolute;
+    height: 100vh;
+    margin-top: 55px;
+    width: 100%;
+    padding-bottom: 50px !important;
+  }
+
+  .offcanvas {
+    height: 56px !important;
+  }
+
+  .offcanvas-body button {
+    opacity: 1;
+    width: 71vw;
+    position: absolute;
+    margin-top: 20px;
+    pointer-events: painted;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .offcanvas-body .search_form {
+    display: block;
+  }
+
+  .offcanvas-body .search_form input {
+    background: #fff;
+    width: 63vw;
+    color: #1e223a !important;
+  }
+
+  .offcanvas-body button.active {
+    display: flex;
+  }
+
+  .p-dialog-header,
+  #pr_id_1_content {
+    padding: 0;
+    background: var(--gray-1) !important;
+  }
+
+  #pr_id_1_content {
+    padding-top: 22px;
+  }
+
+  .desktop-sidebar{
+    display: none;
+  }
+}

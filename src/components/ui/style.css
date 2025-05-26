@@ -1,0 +1,23 @@
+#FormSearch{
+    margin-right: 20px;
+    border-radius: 11px;
+    background: #1e223a;
+    margin-right: 25px;
+    width: 260px;
+}
+
+#FormSearch .input-icon{
+    margin-right: 10px;
+}
+
+#FormSearch input{
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    #FormSearch{
+        width: 83vw;
+        margin-right: 0;
+        background: aliceblue;
+    }
+}

@@ -1,0 +1,51 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.child-nav {
+    height: 75px;
+    display: grid;
+}
+
+nav{
+    height: 75px !important;
+}
+
+nav > .flex{
+    height: 75px;
+    padding-top: 5px !important;
+}
+
+.child-nav .hidden a:not(.active_f) {
+    pointer-events: none;
+    opacity: 0;
+}
+
+#drawer-menu {
+    background: #1e2439 !important;
+    width: 80%;
+    position: fixed;
+    margin: 0;
+    height: 100vh;
+}
+
+.LeaguesSidebar {
+    width: 330px !important;
+    padding-left: 0 !important;
+    padding-right: 52px !important;
+    padding-top: 0 !important;
+}
+
+.offcanvas-body .LeaguesSidebar .LeagueItem {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+    justify-content: start;
+}
+
+.LeaguesSidebar .LeagueItem:hover {
+    --tw-text-opacity: 1;
+    background: #191d31;
+}
+
+.LeaguesSidebar .LeagueItem span {
+    margin-left: 12px;
+}

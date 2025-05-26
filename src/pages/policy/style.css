@@ -1,0 +1,8 @@
+
+
+.content-policy{
+    width: 72%;
+    @media (max-width: 991px) {
+        width: 100%;
+    }
+}

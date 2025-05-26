@@ -1,0 +1,57 @@
+# robots.txt for sportbn.com
+# Last updated: 2025-4-10
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /*?*
+Disallow: /*&*
+Disallow: /*.php$
+Disallow: /*.js$
+
+# Dynamic routes
+Allow: /watch-now/matches/
+Allow: /search+about/
+
+# Important pages
+Allow: /privacy-policy
+Allow: /terms
+
+# Crawl control
+Crawl-delay: 2
+
+# Sitemaps
+Sitemap: https://sportbn.com/sitemap.yml
+
+# Search engine specific rules
+User-agent: Googlebot
+Allow: /watch-now/matches/
+Allow: /search+about/
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /img/
+Disallow: /img/private/
+
+User-agent: Bingbot
+Allow: /watch-now/matches/
+Allow: /search+about/
+Crawl-delay: 3
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Ads bots
+User-agent: Mediapartners-Google
+Allow: /

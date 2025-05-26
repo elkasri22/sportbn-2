@@ -1,0 +1,5 @@
+
+
+.link-privacy:hover, .link-terms:hover {
+    text-decoration: underline !important;
+}
