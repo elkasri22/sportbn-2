@@ -14,3 +14,11 @@
 .LeaguesSidebar .LeagueItem span{
     margin-left: 12px;
 }
+.leagues-heading {
+    margin-left: 15px;
+  }
+  .custom-box {
+    background-color: #2c3047;
+    border-radius: 7px;
+  }
+    
