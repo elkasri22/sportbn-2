@@ -8,8 +8,8 @@ const LeaguesSidebar = ({ className, AllLeagues }) => {
 
   return (
     <div className={`${cn('bg-sport-dark/40 rounded-xl p-4 w-full max-w-xs', className)} LeaguesSidebar`}>
-      <div className="mb-6">
-        <h2 className="text-xl font-bold text-white mb-4">Leagues</h2>
+      <div className="mb-6 custom-box">
+        <h2 className="text-xl font-bold text-white mb-4 leagues-heading">Leagues</h2>
         <div className="space-y-1">
           {AllLeagues?.length > 0 && AllLeagues.map((league, index) => (
             <LeagueItem 
